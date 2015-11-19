@@ -264,7 +264,7 @@ a {
 
 .mid-content {
   margin: 2% auto;
-  padding: 2%;
+  padding: 1% 2%;
   color: #333;
 }
 
@@ -333,6 +333,10 @@ a {
 .fl-r { float: right; }
 
 .p-sm { padding: 1em; }
+.p-right { padding-right: 2em;}
+.p-right-s { padding-right: 1em;}
+.p-left-s { padding-left: 1em;}
+
 
 .img-xxs { width: 100px; }
 
@@ -350,3 +354,46 @@ a {
   color: #cc181e;
   font-size: 12px;
   font-weight: 500; }
+
+.subscribe {
+  width: 100px;
+  height: 25px;
+}
+
+.bright-red {
+  background-color: #cc181e;
+}
+
+.font-white {
+  color: white;
+}
+
+.desc {
+  font-size: 1.2em;
+}
+
+.show-more {
+  color: #767676;
+  font-size: 1em;
+  margin: auto 40%;
+}
+
+.autoplay {
+  color: #767676;
+  font-weight: 600;
+}
+
+.small-desc {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.p-b-sm {
+  padding-bottom: 20px;
+}
+
+.sub-no {
+  padding: 5px 10px;
+  border-color: #767676;
+}

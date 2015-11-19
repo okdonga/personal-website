@@ -6,28 +6,26 @@
     <div class="col-sm-8">
       <div ui-view></div>
     </div>
-    <div class="col-sm-4 white">
-      <p class="pt-list">1123Up Next</p>
-      <div ng-repeat="new in news">
-        <!-- <li ui-sref-active="active"> -->
-        <div class="row">
-          <div class="col-sm-4">
+    <div class="col-sm-4 white debug">
+      <div class="clearfix debug">
+        <p class="pt-list fl-l debug">Up Next</p>
+        <p class="pt-list fl-r autoplay debug">Autoplay</p>
+      </div>
+      <div ng-repeat="new in news" class="p-b-sm debug">
+        <div class="clearfix debug">
+          <div class="col-sm-4 debug">
             <a ui-sref="home.portfolio.list({id: new.title})" ng-click="projectid(new.id)" ng-init="projectid(0)"><img ng-src="{{ new.image }}"></a>
           </div>
           <div class="col-sm-8">
-            <div class="pt-list">
-              <p>{{ new.title }}</p>
+            <div class="dark-g font-w-t debug">
+              <p clas="debug">{{ new.title }}</p>
             </div>
             <div>
-              <p>views</p>
-              <p>Recommended for you</p>
+              <p class="small-desc debug">2,000,000 views</p>
+              <p class="small-desc debug">Recommended for you</p>
             </div>
           </div>
         </div>
-       <!--  <div ng-show="new.id == tab">
-          <h4>Now playinig</h4>
-        </div> -->
-        <!-- </li> -->
       </div>
     </div>
   </div>
