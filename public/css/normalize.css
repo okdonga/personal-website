@@ -1,6 +1,6 @@
-/** {
-  border: 1px dotted red;
-}*/
+.debug {
+  outline: 1px solid red;
+}
 
 .header {
   background: #fff;
@@ -10,11 +10,13 @@
   z-index: 3;
   margin: 0;
   padding-top: 5px;
+  padding-left: 2em;
 }
 
 .main {
   margin: 0 10%;
 }
+
 .container-fluid {
   float: right;
 }
@@ -25,7 +27,9 @@
 }
 
 .row {
-  margin-top: 60px;
+  margin-top: 50px;
+  margin-left: 0px;
+  margin-right: 0px
 }
 
 body {
@@ -64,6 +68,8 @@ img {
 .logo-container {
   width: 20em;
   float: left;
+  padding-top: .3em;
+  margin-bottom: .8em;
 }
 
 .search {
@@ -73,32 +79,34 @@ img {
 
 .navbar-form
 .form-group {
-  width: 50%;
+  width: 100%;
 }
 
 .nav {
   overflow-y: scroll;
-  max-height: 500px;
 }
 
 .menu {
   display: none;
   z-index: 2;
-  position: absolute;
+  position: fixed;
   background: white;
-  width: 100%;
-  /* height: 100%; */
+  width: 15%;
+  padding: 1.2em;
+  padding-left: 2em;
+  height: 100%;
 }
 
 
 .container {
-  width: 96%;
+  width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 .guide-container {
   width: 230px;
-  padding: 13px 22px;
+  /*padding: 13px 22px;*/
   background: #FFFFFF;
   position: absolute;
   z-index: 2;
@@ -116,7 +124,9 @@ img {
 
 .form-control {
   border-radius: 0;
+  width: 100%;
 }
+
 
 .middle-column {
   background: #fff;
@@ -186,6 +196,7 @@ a {
   background-color: white;
   padding: 1% 8%;
 }
+
 
 .no-p {
   padding: clear;
@@ -265,6 +276,65 @@ a {
   width: 100%;
 }
 
-white {
+.white {
   background-color: white;
 }
+
+.center {
+  margin: auto;
+  width: 30%;
+}
+
+.m-s {
+  margin: 1em auto;
+}
+
+.m-xs { margin-top: -1em; }
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.pd-m { padding: 2em 2em 2em 5em;}
+
+.pd-b-s { padding-bottom: 1em;}
+
+
+@media (min-width: 768px)
+.form-control {
+    display: inline-block;
+    width: 100%;
+}
+
+.w { width: 100% ;}
+.w-m { width: 60%; }
+.w-sm { width: 20px; }
+
+.fl-l { float: left; }
+.fl-r { float: right; }
+
+.p-sm { padding: 1em; }
+
+.img-xxs { width: 100px; }
+
+.lh-s { line-height: 2em; }
+.lh-xs { line-height: 1.8em; }
+
+.font-w-t { font-weight: 700;}
+
+.font-s-m { font-size: 1.2em; }
+
+.light-gray { background: #f8f8f8; }
+.brd-light { border-color: #d3d3d3; }
+
+

@@ -54,7 +54,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 $(function(){
   $(".element").typed({
-    strings: ["Search for Katie Ok.", "Kimchi ^1000 4life."],
+    strings: ["Search for Katie Ok.", "Why should you hire Katie Ok?"],
     typeSpeed: 20
   });
   $("#typed").typed({

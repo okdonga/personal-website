@@ -26,58 +26,46 @@
           <button type="button" class="btn btn-default nav-button" aria-label="Left Align">
             <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
           </button>
-          <img src="img/youtube-logo.jpeg" alt="logo" class="youtube-logo">
+          <a ng-href="/"><img src="img/youtube-logo.jpeg" alt="logo" class="youtube-logo"></a>
         </div>
         <div class="search">
-          <form class="navbar-form" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control element" placeholder="Search">
+          <form class="" role="search">
+            <div class="w-m fl-l debug">
+              <input type="text" class="w lh-s font-w-t font-s-m element debug" placeholder="" class="form-group debug">
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default fl-l lh-xs light-gray brd-light debug"><img src="img/search.png" class="w-sm debug"></button>
           </form>
         </div>
-
-
       </header>
       <div class="row">
         <div class="guide-container">
           <div class="sidebar-nav" ng-controller="mainController">
               <div class="sidebar-navbar-collapse" >
                 <ul class="nav nav-pills nav-stacked menu">
-                  <li><a ng-href="/">Home</a></li>
+                  <li><a ui-sref="home">Home</a></li>
                   <li ui-sref-active="active"><a ui-sref="home.portfolio">Portfolio</a></li>
                   <li><a href="#">Subscriptions</a></li>
-                  <li><a ui-sref="history">History</a></li>
-                  <li><a href="#">Menu Item 4</a></li><hr>
-                  <p>PLYALISTS</p>
-                  <li><a href="#">Menu Item 4</a></li>
-                  <li><a href="#">Menu Item 4</a></li><hr>
+                  <li><a ui-sref="history">History</a></li><hr>
+                  <p>PLAYLISTS</p>
+                  <li><a href="#">Ruby on Rails</a></li>
+                  <li><a href="#">Hello World</a></li><hr>
                   <p>SUBSCRIPTIONS</p>
-                  <li><a href="#">Menu Item 4</a></li>
-                  <li><a href="#">Menu Item 4</a></li>
-                  <li><a href="#">Menu Item 4</a></li>
-                  <li><a href="#">Menu Item 4</a></li>
-                  <li><a href="#">Menu Item 4</a></li>
-                  <li><a href="#">Menu Item 4</a></li>
-                  <li><a href="#">Menu Item 4</a></li>
-                  <li><a href="#">Menu Item 4</a></li>
-                  <li><a href="#">Menu Item 4</a></li>
-                  <li><a href="#">Menu Item 4</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Javascript</a></li>
                 </ul>
               </div><!-- /.nav-collapse -->
             <!-- </div> -->
           </div>
         </div>
 
-
-          <div class="main" ng-controller="mainController">
-            <div ng-controller="portfolioController">
-              <!-- angular templating -->
-              <div ui-view="header"></div>
-              <div ui-view="content"></div>
-              <div ui-view="footer"></div>
-            </div>
+        <div ng-controller="mainController">
+          <div ng-controller="portfolioController">
+            <!-- angular templating -->
+            <div ui-view="header"></div>
+            <div ui-view="content" class="main pd-b-s clearfix debug"></div>
+            <div ui-view="footer" class="white pd-m debug"></div>
           </div>
+        </div>
       </div>
     </div>
      <script src="js/app.js"></script>

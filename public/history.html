@@ -1,15 +1,17 @@
-<div class="inline">
-  <li>Watch history</li>
-  <li>Search history</li>
-</div><hr>
 
-<div ng-controller="historyController">
-  <div class="" ng-repeat="story in stories">
-    <div class="row single-project">
-      <div class="image col-sm-3"><img class="no-p" ng-src="{{ story.image }}"></div>
-
-      <div class="title"><h4 class="title">{{ story.title }}</h4></div>
-      <div class="description"><p>{{ story.description }}</p></div>
+<div class="white m-xs debug" ng-controller="historyController">
+  <div class="white" ng-repeat="story in stories">
+    <div class="single-project white clearfix debug">
+      <div class="id fl-l p-sm debug"><p>{{ story.id }}</p></div>
+      <div class="image p-sm fl-l debug"><img class="img-xxs" ng-src="{{ story.image }}"></div>
+      <div class="col-sm-8 fl-l debug">
+        <div class="dark-g"><h4 class="debug">{{ story.title }}</h4></div>
+        <div class="position"><h5 class="position debug">{{ story.position }}</h5></div>
+        <div class="description debug"><p>{{ story.description }}</p></div>
+      </div>
+      <div class="fl-r debug">
+        <div class="dates p-sm debug"><h5>{{ story.dates }}</h5></div>
+      </div><hr>
     </div>
   </div>
 </div>

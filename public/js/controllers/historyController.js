@@ -1,35 +1,35 @@
 app.controller('historyController', function($scope) {
   $scope.stories = [
     {
-      title: 'Born in Korea, 1990',
+      id: 1,
+      title: 'Dev Bootcamp | SF',
       image: 'img/filler.jpg',
-      description: 'The official birth of Katie Ok, everything is okay.'
+      position: 'Full-Stack Developer',
+      description: 'Learning to become a professional web developer in 18 weeks\n Built professional web applications using Ruby, Ruby on Rails, JavaScript, HTML/CSS\n Developed proficient knowledge of Git workflow and immersed in Agile production environment',
+      dates: 'June 2015 - Nov 2015'
     },
     {
-      title: 'Moved to the UK at 12',
+      id: 2,
+      title: 'KB Financial Group | Seoul',
       image: 'img/filler.jpg',
-      description: 'At 12, Katie decided to move to UK, to study, and initialiating the beginning of her long journey of education while her family stayed in Korea.'
+      position: 'Investor Relations Team',
+      description: 'Managed the business report filing process of KB, Korea’s largest financial group.\n Preparing quarterly filings to Korean Financial Supervisory Services (FSS)',
+       dates: 'July 2012 - June 2015'
     },
     {
-      title: 'Study finance at LSE',
+      id: 3,
+      title: 'KB Kookmin Bank | Seoul',
       image: 'img/filler.jpg',
-      description: 'Katie '
+      position: 'Trade Finance / Product Sales',
+      description: 'Optimized the remittance process of KB\'s outbound and inbound corporate clients\n Operated FX transaction desk and opened foreign currency accounts',
+      dates: 'July 2011 - July 2012'
     },
     {
-      title: 'Land first job in banking',
+      id: 4,
+      title: 'The London School of Economics (LSE) | London ',
       image: 'img/filler.jpg',
-      description: 'Katie decides to move back to Korea, to start her first job in KB Kookmin Bank, largest commercial bank in Korea.'
+      description: 'Bachelor of Science in Accounting and Finance',
+      dates: 'Oct 2008 - July 2011'
     },
-    {
-      title: 'Learns a lot',
-      image: 'img/filler.jpg',
-      description: 'Katie, after brief experience as commercial sales/teller, gets recruited to the headquarter, investor relations department, as engages in meetings with potential investors and current shareholders of the company.'
-    },
-    {
-      title: 'Change of career path as full-stack developer',
-      image: 'img/filler.jpg',
-      description: 'Starts a new chapter of her life as software developer, after discovering her interest in coding and feels that its the best decision in her life'
-    }
-
   ];
 });
