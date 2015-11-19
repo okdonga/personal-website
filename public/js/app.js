@@ -62,6 +62,5 @@ $(function(){
     });
   $('button').click(function() {
     $('.menu').toggle('slide');
-    // $('.guide-container').css('width', 345);
   });
 });

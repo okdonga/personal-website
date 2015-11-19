@@ -316,9 +316,12 @@ a {
     width: 100%;
 }
 
+.m-r { margin-right: 10px; }
+
 .w { width: 100% ;}
 .w-m { width: 60%; }
 .w-sm { width: 20px; }
+.w-xxs { width: 14px; }
 
 .fl-l { float: left; }
 .fl-r { float: right; }
@@ -337,4 +340,7 @@ a {
 .light-gray { background: #f8f8f8; }
 .brd-light { border-color: #d3d3d3; }
 
-
+.red-t {
+  color: #cc181e;
+  font-size: 12px;
+  font-weight: 500; }
