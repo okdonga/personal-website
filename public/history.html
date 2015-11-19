@@ -1,0 +1,17 @@
+<div class="inline">
+  <li>Watch history</li>
+  <li>Search history</li>
+</div><hr>
+
+<div ng-controller="historyController">
+  <div class="" ng-repeat="story in stories">
+    <div class="row single-project">
+      <div class="image col-sm-3"><img class="no-p" ng-src="{{ story.image }}"></div>
+
+      <div class="title"><h4 class="title">{{ story.title }}</h4></div>
+      <div class="description"><p>{{ story.description }}</p></div>
+    </div>
+  </div>
+</div>
+
+

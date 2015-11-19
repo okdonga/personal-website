@@ -1,0 +1,36 @@
+
+<div class="col-sm-9 middle-column" ng-controller="mainController" ng-init="">
+
+  <!-- my four major achievements -->
+    <div ng-repeat="new in news">
+      <div class="row single-project">
+        <!-- <a ui-sref="history"> -->
+        <div class="image col-sm-3"><a ui-sref="home.portfolio.list({id: new.title})" ng-click="projectid(new.id)"><img ng-src="{{ new.image }}"></a></div>
+        <div class="col-sm-9">
+          <div class="title"><h4 class="title">{{ new.title }}</h4></div>
+          <div class="author"><p>by Katie Ok</p><img class="small-check" src="img/check-clean.jpg"></div>
+          <div class="date"><li>Uploaded on {{ new.date | date }}</li><li class="dot">|</li><li>235 views</li></div>
+          <div class="description"><p>{{ new.description | limitTo:numLimit }}...</p></div>
+          <button class="subscribe">{{ new.button }}</button>
+        </div><hr>
+      </div>
+    </div>
+</div>
+
+<div class="col-sm-3 pad" ng-controller="mainController">
+  <div class="wbg">
+    <h3>KATIE OK</h3>
+    <p>Full-Stack Developer</p>
+    <img class="no-p" src="img/head.jpeg">
+    <h4 class="underline dark-g">Top skills | Expertise</h4>
+    <div class="list" ng-repeat="skill in skills">
+      <li class="list">{{ skill }}</li><hr>
+    </div>
+    <h4 class="underline dark-g">For more information</h4>
+    <div class="inline" ng-repeat="social in socials">
+      <a href="{{ social.link }}"><img class="img-sm" ng-src="{{ social.image }}"></a>
+    </div>
+  </div>
+</div>
+
+
