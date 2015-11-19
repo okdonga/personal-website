@@ -262,13 +262,19 @@ a {
   margin-top: 1%;
 }
 
+.mid-content {
+  margin: 2% auto;
+  padding: 2%;
+  color: #333;
+}
+
 .gray {
   background-color: gray;
 }
 
 .crop>img {
   height: 320px;
-  width: 640px;
+  width: 100%;
 }
 
 @media (min-width: 768px)
@@ -318,7 +324,7 @@ a {
 
 .m-r { margin-right: 10px; }
 
-.w { width: 100% ;}
+.w { width: 100%;}
 .w-m { width: 60%; }
 .w-sm { width: 20px; }
 .w-xxs { width: 14px; }

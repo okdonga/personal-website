@@ -5,7 +5,6 @@
   <div class="middle-column">
     <div class="col-sm-8">
       <div ui-view></div>
-      <p>views</p>
     </div>
     <div class="col-sm-4 white">
       <p class="pt-list">1123Up Next</p>
@@ -13,9 +12,7 @@
         <!-- <li ui-sref-active="active"> -->
         <div class="row">
           <div class="col-sm-4">
-            <!-- <li ng-class="{ active:new.title == projectid(new.id) ==  }"> -->
-              <a ui-sref="home.portfolio.list({id: new.title})" ng-click="projectid(new.id)"><img ng-src="{{ new.image }}"></a>
-            <!-- </li> -->
+            <a ui-sref="home.portfolio.list({id: new.title})" ng-click="projectid(new.id)"><img ng-src="{{ new.image }}"></a>
           </div>
           <div class="col-sm-8">
             <div class="pt-list">
