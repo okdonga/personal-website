@@ -10,7 +10,8 @@ app.controller('mainController', function($scope) {
       date: new Date('2015', '11', '10'),
       hours: '+1000',
       likes: 0,
-      button: 'subscribe'
+      button: 'subscribe',
+      link: 'https://katie200.herokuapp.com'
     },
     {
       id: 1,
@@ -21,7 +22,7 @@ app.controller('mainController', function($scope) {
       hours: '+60',
       likes: 0,
       button: 'HD',
-      link: ''
+      link: 'https://meet-the-need-app.herokuapp.com'
     },
     {
       id: 2,
@@ -32,7 +33,7 @@ app.controller('mainController', function($scope) {
       hours: '+1000',
       likes: 0,
       button: 'HD',
-      link: ''
+      link: 'http://shielded-mesa-3923.herokuapp.com'
     },
   ];
 
